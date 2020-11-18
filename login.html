@@ -10,18 +10,18 @@
 <body>
     <div class="login-page">
         <div class="form">
-          <form class="register-form">
+          <form class="register-form" action="" method="POST">
             <input type="text" name="username" placeholder="username" required/>
             <input type="password" name="password" placeholder="password" required/>
             <input type="text" name="email" placeholder="email address" required/>
             <input type="tel" name="telphone"  pattern="[0-9]{10}" placeholder="contact number" required/>
-            <button>create</button>
+            <button type="submit">create</button>
             <p class="message">Already registered? <a href="#">Sign In</a></p>
           </form>
-          <form class="login-form">
+          <form class="login-form" action="" method="POST">
             <input type="text" name="username" placeholder="username" required/>
             <input type="password" name="password" placeholder="password" required/>
-            <button>login</button>
+            <button type="submit">login</button>
             <p class="message">Not registered? <a href="#">Create an account</a></p>
           </form>
         </div>
