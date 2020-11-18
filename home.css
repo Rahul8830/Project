@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#nav{
+    width: 100%;
+    height: 15vh;
+    background-color: rgb(98, 72, 122);
+    clip-path: polygon(100% 0, 100% 74%, 48% 100%, 0 73%, 0 0);
+    font-family: 'Ubuntu', sans-serif;
+}
+#nav-content{   
+    margin: 0px 70px;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    padding-top: 4vh;
+    /* align-items: center; */
+}
+#left{
+    flex: 2;
+    display: flex;
+    justify-content: space-around;
+    height: 2rem;
+}
+#right{
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    height: 2rem;
+}
+#center{
+    flex: 2;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+}
+a{
+    color: rgb(248, 248, 248);
+    text-decoration: none;
+    padding: 5px;
+}
+a:hover, .active{
+    border: 1px purple solid;
+    border-radius: 5px;
+    background-color: white;
+    color: purple;
+}
+.switch-field {
+	display: flex;
+	margin-bottom: 36px;
+	overflow: hidden;
+}
+
+.switch-field input {
+	position: absolute !important;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	width: 1px;
+	border: 0;
+	overflow: hidden;
+}
+
+.switch-field label {
+	background-color: #c97070;
+	color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 600;
+	line-height: 1;
+	text-align: center;
+	padding: 8px 16px;
+	margin-right: -1px;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+	transition: all 0.2s ease-in-out;
+}
+
+.switch-field label:hover {
+	cursor: pointer;
+}
+
+.switch-field input:checked + label {
+	background-color: #79d168;
+	box-shadow: none;
+}
+
+.switch-field label:first-of-type {
+	border-radius: 4px 0 0 4px;
+}
+
+.switch-field label:last-of-type {
+	border-radius: 0 4px 4px 0;
+}
+#main-content{
+    width: 40%;
+    background-color: rgb(240, 240, 240);
+    margin: 8vh auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:3rem 0;
+    border-radius: 5px;
+    box-shadow:3px 3px 5px 6px rgb(209, 206, 206);
+}
+.form-element{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#name-feild, #amount-feild{
+    height: 4rem;
+    margin-bottom: 3rem;
+}
+#btn{
+    height: 3rem;
+    font-size: 20px;
+    padding: 0.5rem;
+    color: white;
+    background-image: linear-gradient(to top, #a94bb9, #9b46b7, #8d42b5, #7d3eb2, #6d3ab0);
+    border:none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+.form-element label{
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: rgb(48, 47, 47);
+}

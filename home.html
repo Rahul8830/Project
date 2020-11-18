@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&family=Ubuntu&display=swap" rel="stylesheet"> 
+    <title>Document</title>
+</head>
+<body>
+    <nav id="nav">
+        <div id="nav-content">
+            <div id="left">
+                <a href="" class="active">Home</a>
+                <a href="owedBy.html">Owed By</a>
+                <a href="owedTo.html">Owed To</a>
+            </div>
+            <div id="center">
+                
+            </div>
+            <div id="right">
+                <a href="">Name</a>
+                <a href="">Logout</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div id="main-content">
+            <form action="">
+                <div id="name-feild" class="form-element">
+                    <label for="name">Enter the name of the user</label>
+                    <input type="text" name="username" placeholder="Enter username...">
+                </div>
+                <div class="switch-field">
+                    <input type="radio" id="given" name="oper" value="given" checked/>
+                    <label for="given">Given to</label>
+                    <input type="radio" id="taken" name="oper" value="taken" />
+                    <label for="taken">Taken from</label>
+                </div>
+                <div id="amount-feild" class="form-element">
+                    <label for="amount">Enter the amount</label>
+                    <input type="number" name="amount">
+                </div>
+                <div id="button-feild" class="form-element">
+                    <button type="submit" id="btn">Submit</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    
+</body>
+</html>
